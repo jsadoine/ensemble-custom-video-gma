@@ -1,0 +1,14 @@
+[workspace]
+authors = ["jsadoine <sadoine.j@gmail.com>"]
+channels = ["conda-forge"]
+name = "video-gma"
+platforms = ["linux-64", "win-64"]
+version = "0.1.0"
+
+[tasks]
+pipeline = "python pipeline.py"
+
+[dependencies]
+ffmpeg = ">=9.0.2,<10"
+tqdm = ">=4.70.1,<5"
+python = ">=3.11"

@@ -1,0 +1,20 @@
+# Configuration du pipeline vidéos -> BIDS
+# Copier ce fichier en "config.toml" et remplacer les chemins.
+#
+# Sous Windows, écrire les chemins entre apostrophes simples :  'C:\Données\videos'
+# (ou avec des / et des guillemets :  "C:/Données/videos")
+# Un chemin relatif est compris par rapport à l'emplacement de ce fichier.
+
+# Dossier où déposer les vidéos d'origine (jamais modifiées)
+videos_brutes = 'C:\chemin\vers\videos_brutes'
+
+# Fichier de correspondance identifiant général (E) -> identifiant vidéo (V)
+# CSV ou TSV avec une ligne d'en-tête ; créé s'il n'existe pas
+correspondance = 'C:\chemin\vers\correspondance_ids.csv'
+
+# Dossier du projet BIDS (rawdata/ et le journal des vidéos traitées y sont créés)
+projet = 'C:\chemin\vers\nom_du_projet-videos'
+
+# Facultatif : dossier où garder une copie de chaque MP4 produit
+# (supprimer la ligne ou laisser '' pour ne pas faire de copie)
+archive_mp4 = 'C:\chemin\vers\archive_mp4'
