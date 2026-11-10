@@ -5,3 +5,5 @@ pixi.lock
 
 # config
 config.toml
+
+__pycache__
